@@ -5,8 +5,8 @@ public class Empresa {
     private Long idEmpresa;
     private String nomeEmpresa;
     private String nomeFantasia;
-    private Long CNPJEmpresa;
-    private Long telefone;
+    private String CNPJEmpresa;
+    private String telefone;
     private String email;
     private String senha;
     private String endereco;
@@ -35,19 +35,19 @@ public class Empresa {
         this.nomeFantasia = nomeFantasia;
     }
 
-    public Long getCNPJEmpresa() {
+    public String getCNPJEmpresa() {
         return CNPJEmpresa;
     }
 
-    public void setCNPJEmpresa(Long CNPJEmpresa) {
+    public void setCNPJEmpresa(String CNPJEmpresa) {
         this.CNPJEmpresa = CNPJEmpresa;
     }
 
-    public Long getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(Long telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 

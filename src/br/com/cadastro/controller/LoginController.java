@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.cadastro.dao.LoginDAO;
-import br.com.cadastro.model.Usuario;
+import br.com.cadastro.model.Empresa;
 
 @Controller
 public class LoginController{
@@ -17,9 +17,9 @@ public class LoginController{
     }
    
     @RequestMapping("efetuaLogin") //autentica e loga
-    public String efetuaLogin(Usuario usuario, HttpSession session) throws ClassNotFoundException {
-        if(new LoginDAO().existeUsuario(usuario)) {
-            session.setAttribute("usuarioLogado", usuario);
+    public String efetuaLogin(Empresa empresa, HttpSession session) throws ClassNotFoundException {
+        if(new LoginDAO().existeEmpresa(empresa)) {
+            session.setAttribute("empresaLogada", empresa);
             return "redirect:listaPrincipal";
         }
         return "redirect:loginForm";
