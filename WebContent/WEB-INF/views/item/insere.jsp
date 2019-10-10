@@ -7,16 +7,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Login</title>
+<title>Cadastro Item</title>
 </head>
 <body>
-	<h3>Login</h3>
-	<form action="efetuaLogin" method="post" >
-		<label>E-mail:</label><br />
-		<input name="email" > <br/>
-		<label>Senha:</label><br />
-		<input name="senha" type="password" value=""><br/><br/>
-		<input type="submit" value="Entrar">
+<c:import url="/WEB-INF/views/principal/menu.jsp"/>
+<br />
+	
+	Cadastro de Item <br /><br />
+	
+	<form action="adicionaItem" method="post">
+					
+				<label for="NomeItem">Nome Item</label>  
+				<input type="text" name="nomeItem" value="${item.nomeItem}" >
+				<form:errors path="item.nomeItem" cssStyle="color:#B71C1C"/><br />
+		
+				<input type="submit" value="Criar">
+		
 	</form>
 </body>
 </html>

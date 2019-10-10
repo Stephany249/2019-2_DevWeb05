@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Sistema Cadastro</title>
+<title>Home</title>
 </head>
 <body>
 	
 	<c:import url="/WEB-INF/views/principal/menu.jsp"/>
-	<h4>Olá ${usuarioLogado.login}, Seja bem vindo Sistema.</h4>
+	<h4>Olá ${usuarioLogado.email}, Seja bem vindo Sistema.</h4>
 	
 </body>
 </html>
