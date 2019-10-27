@@ -18,7 +18,7 @@
 	
 	<form action="alterarCliente" method="post" class="form-horizontal">
 	
-				<input type="hidden" name="id" value="${cliente.idCliente}"/><br/>
+				<input type="hidden" name="idCliente" value="${cliente.idCliente}"/><br/>
 	
 				<label for="NomeCliente">Nome Cliente</label>  
 				<input type="text" name="nomeCliente" value="${cliente.nomeCliente}" > 

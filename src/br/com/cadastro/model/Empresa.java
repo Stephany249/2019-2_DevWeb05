@@ -1,7 +1,6 @@
 package br.com.cadastro.model;
 
 public class Empresa {
-
     private Long idEmpresa;
     private String nomeEmpresa;
     private String nomeFantasia;

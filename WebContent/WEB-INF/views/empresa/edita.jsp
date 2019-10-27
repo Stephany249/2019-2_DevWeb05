@@ -18,7 +18,7 @@
 	
 	<form action="alterarEmpresa" method="post" class="form-horizontal">
 	
-				<input type="hidden" name="id" value="${empresa.idEmpresa}" />
+				<input type="hidden" name="idEmpresa" value="${empresa.idEmpresa}" />
 	
 				<label for="NomeEmpresa">Nome Empresa</label>  
 				<input type="text" name="nomeEmpresa" value="${empresa.nomeEmpresa}" > 

@@ -10,7 +10,7 @@
 <body>
 	
 	<c:import url="/WEB-INF/views/principal/menu.jsp"/>
-	<h4>Olá ${usuarioLogado.email}, Seja bem vindo Sistema.</h4>
+	<h4>Olá ${empresaLogada.email}, Seja bem vindo Sistema.</h4>
 	
 </body>
 </html>

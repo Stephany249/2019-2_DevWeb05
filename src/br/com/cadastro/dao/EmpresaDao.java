@@ -136,8 +136,7 @@ public class EmpresaDao {
 			stmt.setLong(8, empresa.getIdEmpresa());
 			stmt.execute();
 			stmt.close();
-			
-			
+						
 		}catch(SQLException e){
 			throw new RuntimeException(e);
 		}

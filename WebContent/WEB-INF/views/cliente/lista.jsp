@@ -36,7 +36,7 @@
 				<td>${cliente.endereco}</td>
 				<td>${cliente.idEmpresa}</td>
 				<td><a href="editaCliente?id=${cliente.idCliente}" title="Editar">Editar</a></td>
-				<td><a href="removeCliente?id=${cliente.idCliente}" title="Excluir">Excluir</a></td>
+				<td><a href="removeCliente?idCliente=${cliente.idCliente}" title="Excluir">Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>

@@ -123,7 +123,7 @@ public class ClienteDAO {
 	}
 	
 	public void alterar(Cliente cliente) {
-		String sql = "update clientes set nomeCliente=?, CPF_CNPJCliente=?, telefone=?, email=?, senha=?, endereco=?, IdEmpresa=? where id = ?";
+		String sql = "update clientes set nomeCliente=?, CPF_CNPJCliente=?, telefone=?, email=?, senha=MD5(?), endereco=?, IdEmpresa=? where id = ?";
 		
 		try {
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
