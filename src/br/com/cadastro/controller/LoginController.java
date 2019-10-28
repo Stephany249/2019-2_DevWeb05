@@ -13,7 +13,7 @@ public class LoginController{
 
     @RequestMapping("loginForm") //envia para a mesma pagina
     public String loginForm() {
-        return "login/login";
+        return "../../resources/login";
     }
    
     @RequestMapping("efetuaLogin") //autentica e loga
