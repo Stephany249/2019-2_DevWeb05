@@ -4,7 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="br">
 
 <head>
 
@@ -17,11 +17,9 @@
   <title>Protocoli - Login</title>
 
   <!-- Custom fonts for this template-->
-  <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">-->
   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/vendor/fontawesome-free/css/all.min.css" />" />
 
   <!-- Custom styles for this template-->
-  <!--<link href="css/sb-admin.css" rel="stylesheet">-->
   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/sb-admin.css" />" />
   
   
@@ -60,19 +58,19 @@
           <input type="submit" value="Entrar" class="btn btn-primary btn-block">
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="register.html">Criar uma conta</a>
-          <a class="d-block small" href="forgot-password.html">Enqueceu sua senha?</a>
+          <a class="d-block small mt-3" href="#">Criar uma conta</a>
+          <a class="d-block small" href="#">Enqueceu sua senha?</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<c:url value="/resources/vendor/jquery/jquery.min.js" />"></script>
+  <script src="<c:url value="/resources/vendor/bootstrap/js/bootstrap.bundle.min.js" />" ></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="<c:url value="/resources/vendor/jquery-easing/jquery.easing.min.js" />" ></script>
 
 </body>
 

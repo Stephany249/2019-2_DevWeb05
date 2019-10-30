@@ -20,7 +20,7 @@ public class EmpresaController {
 	@RequestMapping("listaEmpresas")
 	public String lista(Model modelEmpresa)throws ClassNotFoundException{
 		modelEmpresa.addAttribute("empresa", daoEmpresa.lista());
-		return "empresa/lista";
+		return "../../resources/clientes";
 	}
 	
 	@RequestMapping("novaEmpresa")

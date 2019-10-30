@@ -20,7 +20,7 @@ public class ItemController {
 	@RequestMapping("listaItens")
 	public String lista(Model modelItem)throws ClassNotFoundException{
 		modelItem.addAttribute("item", daoItem.lista());
-		return "item/lista";
+		return "../../resources/item";
 	}
 	
 	@RequestMapping("novoItem")

@@ -10,12 +10,12 @@ public class PrincipalController{
 	
 	@RequestMapping("listaPrincipal")
 	public String listaPrincipal() {
-		return "principal/principal";
+		return "../../resources/index";
 	}
 	
 	@RequestMapping("/")
 	public String listaPrincipalRaiz() {
-		return "principal/principal";
+		return "../../resources/index";
 	}
 	
 }

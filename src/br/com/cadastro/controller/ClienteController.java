@@ -20,7 +20,7 @@ public class ClienteController {
 	@RequestMapping("listaClientes")
 	public String lista(Model modelCliente)throws ClassNotFoundException{
 		modelCliente.addAttribute("cliente", daoCliente.lista());
-		return "cliente/lista";
+		return "../../resources/clientes";
 	}
 	
 	@RequestMapping("novoCliente")
