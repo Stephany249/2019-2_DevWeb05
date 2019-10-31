@@ -9,8 +9,6 @@
 <title>Lista Empresa</title>
 </head>
 <body>
-<c:import url="/WEB-INF/views/principal/menu.jsp"/>
-	<br />
 	<a href="novaEmpresa">Cadastrar nova Empresa</a>
 	<br />
 	<br />

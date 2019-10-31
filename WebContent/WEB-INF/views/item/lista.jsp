@@ -9,8 +9,6 @@
 <title>Lista Item</title>
 </head>
 <body>
-<c:import url="/WEB-INF/views/principal/menu.jsp"/>
-	<br />
 	<a href="novoItem">Cadastrar novo item</a>
 	<br />
 	<br />

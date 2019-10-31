@@ -9,8 +9,6 @@
 <title>Lista Cliente</title>
 </head>
 <body>
-<c:import url="/WEB-INF/views/principal/menu.jsp"/>
-	<br />
 	<a href="novoCliente">Cadastrar novo Cliente</a>
 	<br />
 	<br />
