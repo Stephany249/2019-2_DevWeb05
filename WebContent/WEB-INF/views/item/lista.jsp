@@ -30,5 +30,13 @@
 			</tr>
 		</c:forEach>
 	</table>
+	<br>
+	<br>
+		<select>
+			<option value="">Selecione um item...</option>
+				<c:forEach items="${item}" var="item">
+					<option value="">${item.nomeItem}</option>
+				</c:forEach>
+		</select>
 </body>
 </html>

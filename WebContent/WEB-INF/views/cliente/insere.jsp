@@ -44,7 +44,7 @@
 				<label for="IdEmpresa">Id Empresa</label>  
 				<input type="text" name="IdEmpresa" value="${cliente.idEmpresa}" >
 				<form:errors path="cliente.IdEmpresa" cssStyle="color:#B71C1C"/><br />
-		
+				
 				<input type="submit" value="Criar">
 		
 	</form>
