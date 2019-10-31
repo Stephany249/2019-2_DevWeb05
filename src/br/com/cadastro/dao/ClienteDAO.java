@@ -34,8 +34,8 @@ public class ClienteDAO {
 		try {
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
 			stmt.setString(1, cliente.getNomeCliente());
-			stmt.setString(2, cliente.getCPF_CNPJCliente());
-			stmt.setString(3, cliente.getTelefone());
+			stmt.setLong(2, cliente.getCPF_CNPJCliente());
+			stmt.setLong(3, cliente.getTelefone());
 			stmt.setString(4, cliente.getEmail());
 			stmt.setString(5, cliente.getSenha());
 			stmt.setString(6, cliente.getEndereco());
@@ -60,8 +60,8 @@ public class ClienteDAO {
 				
 				cliente.setIdCliente(rs.getLong("id"));
 				cliente.setNomeCliente(rs.getString("nomeCliente"));
-				cliente.setCPF_CNPJCliente(rs.getString("CPF_CNPJCliente"));
-				cliente.setTelefone(rs.getString("telefone"));
+				cliente.setCPF_CNPJCliente(rs.getLong("CPF_CNPJCliente"));
+				cliente.setTelefone(rs.getLong("telefone"));
 				cliente.setEmail(rs.getString("email"));
 				cliente.setSenha(rs.getString("senha"));
 				cliente.setEndereco(rs.getString("endereco"));
@@ -105,8 +105,8 @@ public class ClienteDAO {
 					
 					cliente.setIdCliente(rs.getLong("id"));
 					cliente.setNomeCliente(rs.getString("nomeCliente"));
-					cliente.setCPF_CNPJCliente(rs.getString("CPF_CNPJCliente"));
-					cliente.setTelefone(rs.getString("telefone"));
+					cliente.setCPF_CNPJCliente(rs.getLong("CPF_CNPJCliente"));
+					cliente.setTelefone(rs.getLong("telefone"));
 					cliente.setEmail(rs.getString("email"));
 					cliente.setSenha(rs.getString("senha"));
 					cliente.setEndereco(rs.getString("endereco"));
@@ -129,8 +129,8 @@ public class ClienteDAO {
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
 			
 			stmt.setString(1, cliente.getNomeCliente());
-			stmt.setString(2, cliente.getCPF_CNPJCliente());
-			stmt.setString(3, cliente.getTelefone());
+			stmt.setLong(2, cliente.getCPF_CNPJCliente());
+			stmt.setLong(3, cliente.getTelefone());
 			stmt.setString(4, cliente.getEmail());
 			stmt.setString(5, cliente.getSenha());
 			stmt.setString(6, cliente.getEndereco());
