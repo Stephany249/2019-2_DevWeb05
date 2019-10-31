@@ -3,8 +3,8 @@ package br.com.cadastro.model;
 public class Cliente {
     private Long idCliente;
     private String nomeCliente;
-    private String CPF_CNPJCliente;
-    private String telefone;
+    private Long CPF_CNPJCliente;
+    private Long telefone;
     private String email;
     private String senha;
     private String endereco;
@@ -26,19 +26,19 @@ public class Cliente {
         this.nomeCliente = nomeCliente;
     }
 
-    public String getCPF_CNPJCliente() {
+    public Long getCPF_CNPJCliente() {
         return CPF_CNPJCliente;
     }
 
-    public void setCPF_CNPJCliente(String CPF_CNPJCliente) {
+    public void setCPF_CNPJCliente(Long CPF_CNPJCliente) {
         this.CPF_CNPJCliente = CPF_CNPJCliente;
     }
 
-    public String getTelefone() {
+    public Long getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String telefone) {
+    public void setTelefone(Long telefone) {
         this.telefone = telefone;
     }
 
