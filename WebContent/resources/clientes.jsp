@@ -4,34 +4,21 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="br">
-
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>Protocoli - Clientes</title>
-
-  <!-- Custom fonts for this template-->
   <link href="<c:url value="/resources/vendor/fontawesome-free/css/all.min.css" />" rel="stylesheet" type="text/css">
-
-  <!-- Page level plugin CSS-->
   <link href="<c:url value="/resources/vendor/datatables/dataTables.bootstrap4.css" />" rel="stylesheet">
-
-  <!-- Custom styles for this template-->
   <link href="<c:url value="/resources/css/sb-admin.css" />" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
-
-<!-- Import da navbar e sidebar para ser sempre a mesma em todas as telas! -->
-<c:import url="/resources/navbar.jsp"/>
-
-<c:import url="/WEB-INF/views/cliente/lista.jsp"/>
+	<c:import url="/resources/navbar.jsp"/>
+	<c:import url="/WEB-INF/views/cliente/lista.jsp"/>
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">

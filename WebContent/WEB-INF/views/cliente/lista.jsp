@@ -9,34 +9,40 @@
 <title>Lista Cliente</title>
 </head>
 <body>
-	<a href="novoCliente">Cadastrar novo Cliente</a>
-	<br />
-	<br />
-	<table>
-		<tr>
-			<th>Id</th>
-			<th>Nome Cliente</th>
-			<th>CPF/CNPJ Cliente</th>
-			<th>Telefone</th>
-			<th>E-mail</th>
-			<th>Endereço</th>
-			<th>Id Empresa</th>
-			<th></th>
-			<th></th>
-		</tr>
-		<c:forEach items="${cliente}" var="cliente">
-			<tr>
-				<td>${cliente.idCliente}</td>
-				<td>${cliente.nomeCliente}</td>
-				<td>${cliente.CPF_CNPJCliente}</td>
-				<td>${cliente.telefone}</td>
-				<td>${cliente.email}</td>
-				<td>${cliente.endereco}</td>
-				<td>${cliente.idEmpresa}</td>
-				<td><a href="editaCliente?id=${cliente.idCliente}" title="Editar">Editar</a></td>
-				<td><a href="removeCliente?idCliente=${cliente.idCliente}" title="Excluir">Excluir</a></td>
-			</tr>
-		</c:forEach>
-	</table>
+	<div class="card mb-3">
+		<div class="card-header">
+		<i class="fas fa-table"></i> Lista de Clientes</div>
+			<div class="card-body">
+				<div class="table-responsive">
+					<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+						<tr>
+							<th>Id</th>
+							<th>Nome Cliente</th>
+							<th>CPF/CNPJ Cliente</th>
+							<th>Telefone</th>
+							<th>E-mail</th>
+							<th>Endereço</th>
+							<th>Id Empresa</th>
+							<th>Editar</th>
+							<th>Excluir</th>
+						</tr>
+						<c:forEach items="${cliente}" var="cliente">
+							<tr>
+								<td>${cliente.idCliente}</td>
+								<td>${cliente.nomeCliente}</td>
+								<td>${cliente.CPF_CNPJCliente}</td>
+								<td>${cliente.telefone}</td>
+								<td>${cliente.email}</td>
+								<td>${cliente.endereco}</td>
+								<td>${cliente.idEmpresa}</td>
+								<td><a href="editaCliente?id=${cliente.idCliente}" title="Editar"><i class="fas fa-pencil-alt"></i></a></td>
+								<td><a href="removeCliente?idCliente=${cliente.idCliente}" title="Excluir"><i class="fas fa-trash-alt"></i></a></td>
+							</tr>
+						</c:forEach>
+					</table>
+				</div>
+			</div>	
+	</div>
+	<a href="novoCliente"><i class="far fa-plus-square"></i> Cadastrar novo Cliente</a>
 </body>
 </html>

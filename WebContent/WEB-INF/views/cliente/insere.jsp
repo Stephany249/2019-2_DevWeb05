@@ -26,7 +26,7 @@
 				<form:errors path="cliente.CPF_CNPJCliente" cssStyle="color:#B71C1C"/><br />
 				
 				<label for="Telefone">Telefone</label>  
-				<input type="text" name="telefone" value="${cliente.telefone}" >
+				<input type="text" name="telefone" value="${cliente.telefone}">
 				<form:errors path="cliente.telefone" cssStyle="color:#B71C1C"/><br />
 				
 				<label for="Email">E-mail</label>  
