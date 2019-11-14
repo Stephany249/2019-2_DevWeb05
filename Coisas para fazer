@@ -1,6 +1,60 @@
-Adicionar o número de página nas tabelas.
-Arrumar a exibição da data na página de Lista de Protocolos
-Fazer os Joins nas tabelas.
-Fazer os Combos nas páginas.
-Arrumar as telas que vão aparecer no site.
-Adicionar os Radios para CPF/CNPJ no cadastro.
+* Tela de Login:
+	Cadastro (Adiciona Empresa) Adicionar os Radios para CPF/CNPJ no cadastro.
+	Tirar o Lembrar-me e esqueci a senha
+	
+* NavBar:
+	Colocar os ícones do usuário alinhados à direita
+	Fazer a tela Configurações (Editar Empresa passando o id da empresa logada)
+	Remover o link para "Empresas"
+	
+* Lista Clientes:
+	Adicionar o número de página na tabela
+	Fazer o JOIN com a tabela de empresas, para exibir apenas os clientes associados à empresa logada.
+	Remover o idCliente
+	
+* Cadastrar Cliente:
+	Tirar o campo "idEmpresa"
+	
+* Editar Cliente:
+	Trocar "Alterar Cliente : id"
+	Tirar o campo "idEmpresa
+	
+* Excluir Cliente:
+	Fazer uma mensagem de "Tem certeza que deseja excluir o cliente?"
+	
+* Lista Protocolos:
+	Remover idProtocolo e idEmpresa (pq a empresa está logada é a unica que pode emitir e ver seus protocolos)
+	Alterar idCliente para CPFCNPJ_Cliente
+	Formatar a exibição da data
+	Arrumar as observação (Colocar um ícone exibe a obs)
+	
+* Emitir Protocolo:
+	Colocar o Combo com os clientes cadastrados.
+	Fazer o JOIN com a tabela de clientes.
+	Colocar o Combo com os itens cadastrados e a opção de cadastrar o item ao emitir o protocolo.
+	Fazer o JOIN com a tabela de itens / itens-protoclos.
+	
+* Editar Protocolo:
+	Trocar "Alterar Protocolo : id"
+	Remover idEmpresa (pq a empresa está logada é a unica que pode emitir e ver seus protocolos)
+	Tirar o campo "idEmpresa
+	Colocar o Combo com os clientes cadastrados.
+	Fazer o JOIN com a tabela de clientes.
+	Formatar a exibição da data
+	
+* Excluir Protocolo:
+	Fazer uma mensagem de "Tem certeza que deseja excluir o protocolo?"
+	
+* Lista Itens:
+	Formatar a Tabela
+	Mover o Castrar para baixo
+	Tiraro Combo
+
+* Criar e Editar Item:
+	Adicionar o novo layout
+	
+* Remover Item:
+	Fazer uma mensagem de "Tem certeza que deseja excluir o item?"
+	
+* TODAS:
+	Arrumar o Layout!!
