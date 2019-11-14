@@ -48,7 +48,7 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#"> <!-- listaProtocolos -->
+        <a class="nav-link" href="listaProtocolos">
           <i class="fas fa-fw fa-table"></i>
           <span>Protocolos</span></a>
       </li>

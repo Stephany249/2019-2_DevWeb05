@@ -34,7 +34,7 @@
 			              </div>
 			              <div class="mr-5">Para emitir um novo protocolo.</div>
 			            </div>
-			            <a class="card-footer text-white clearfix small z-1" href="#">
+			            <a class="card-footer text-white clearfix small z-1" href="novoProtocolo">
 			              <span class="float-left">Novo Protocolo</span>
 			              <span class="float-right">
 			                <i class="fas fa-angle-right"></i>
@@ -50,7 +50,7 @@
 			              </div>
 			              <div class="mr-5">Para consultar o histórico de protocolos emitidos anteriormente.</div>
 			            </div>
-			            <a class="card-footer text-white clearfix small z-1" href="#">
+			            <a class="card-footer text-white clearfix small z-1" href="listaProtocolos">
 			              <span class="float-left">Consultar Protocolos</span>
 			              <span class="float-right">
 			                <i class="fas fa-angle-right"></i>
