@@ -1,7 +1,6 @@
 * Tela de Login:
 	Cadastro (Adiciona Empresa) Adicionar os Radios para CPF/CNPJ no cadastro.
-	Tirar o Lembrar-me e esqueci a senha
-	
+
 * NavBar:
 	Colocar os ícones do usuário alinhados à direita
 	Fazer a tela Configurações (Editar Empresa passando o id da empresa logada)

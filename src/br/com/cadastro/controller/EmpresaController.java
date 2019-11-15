@@ -25,7 +25,7 @@ public class EmpresaController {
 	
 	@RequestMapping("novaEmpresa")
 	public String form() {
-		return "empresa/insere";
+		return "../../resources/register";
 	}
 	
 	@RequestMapping("adicionaEmpresa")

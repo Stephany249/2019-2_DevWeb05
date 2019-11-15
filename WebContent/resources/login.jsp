@@ -47,19 +47,10 @@
               <label for="inputPassword">Senha</label>
             </div>
           </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="remember-me">
-                Lembrar-me
-              </label>
-            </div>
-          </div>
           <input type="submit" value="Entrar" class="btn btn-primary btn-block">
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="#">Criar uma conta</a>
-          <a class="d-block small" href="#">Enqueceu sua senha?</a>
+          <a class="d-block small mt-3" href="novaEmpresa">Criar uma conta</a>
         </div>
       </div>
     </div>
