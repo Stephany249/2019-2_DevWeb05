@@ -34,7 +34,7 @@ public class EmpresaController {
 			return "empresa/insere";
 		}
 		daoEmpresa.adiciona(empresa);
-		return "redirect:listaEmpresas";
+		return "redirect:loginForm";
 	}
 	
 	@RequestMapping("editaEmpresa")

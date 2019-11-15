@@ -1,5 +1,5 @@
-* Tela de Login:
-	Cadastro (Adiciona Empresa) Adicionar os Radios para CPF/CNPJ no cadastro.
+* Tela de Cadastro:
+	Adicionar os Radios para CPF/CNPJ no cadastro. (Precisa? Acho melhor deixar cadastrar apenas com CNPJ...)
 
 * NavBar:
 	Colocar os ícones do usuário alinhados à direita

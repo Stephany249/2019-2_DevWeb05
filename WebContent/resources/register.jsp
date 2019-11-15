@@ -30,9 +30,13 @@
     <div class="card card-register mx-auto mt-5">
       	<div class="card-header">Criar uma Conta</div>
       	<div class="card-body">
-      
-     		 <c:import url="/WEB-INF/views/empresa/insere.jsp"/>
-        
+      		<p>  Preencha todos os campos do formulário abaixo para se cadastrar no sistema! </p>
+      	
+     		<c:import url="/WEB-INF/views/empresa/insere.jsp"/> 
+     		
+	     	<div class="text-center">
+	          <a class="d-block small mt-3" href="loginForm">Página de Login</a>
+	        </div>
      	</div>
     </div>
   </div>
