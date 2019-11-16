@@ -21,7 +21,7 @@
 	<body>
 		<c:import url="/resources/navbar.jsp"/>
 		<br/>
-		Alterar Cliente: ${cliente.idCliente}	
+		Alterar Cliente:	
 		<br/>
 		<br/>
 		

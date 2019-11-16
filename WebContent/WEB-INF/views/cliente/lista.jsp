@@ -16,7 +16,6 @@
 				<div class="table-responsive">
 					<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 						<tr>
-							<th>Id</th>
 							<th>Nome Cliente</th>
 							<th>CPF/CNPJ Cliente</th>
 							<th>Telefone</th>
@@ -28,7 +27,6 @@
 						</tr>
 						<c:forEach items="${cliente}" var="cliente">
 							<tr>
-								<td>${cliente.idCliente}</td>
 								<td>${cliente.nomeCliente}</td>
 								<td>${cliente.CPF_CNPJCliente}</td>
 								<td>${cliente.telefone}</td>

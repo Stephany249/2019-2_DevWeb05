@@ -9,13 +9,11 @@
 * Lista Clientes:
 	Adicionar o número de página na tabela
 	Fazer o JOIN com a tabela de empresas, para exibir apenas os clientes associados à empresa logada.
-	Remover o idCliente
 	
 * Cadastrar Cliente:
 	Tirar o campo "idEmpresa"
 	
 * Editar Cliente:
-	Trocar "Alterar Cliente : id"
 	Tirar o campo "idEmpresa
 	
 * Excluir Cliente:
