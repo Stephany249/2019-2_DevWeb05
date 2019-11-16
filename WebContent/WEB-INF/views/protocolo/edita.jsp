@@ -21,7 +21,7 @@
 	<body>
 		<c:import url="/resources/navbar.jsp"/>
 		<br/>
-		Alterar Protocolo: ${protocolo.idProtocolo}	
+		Alterar Protocolo:
 		<br/>
 		<br/>
 		
@@ -38,7 +38,7 @@
 					<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
 					
 					<label for="dataProtocolo">Data</label>  
-					<input type="text" name="dataProtocolo" value="${protocolo.dataProtocolo}">
+					<input type="text" name="dataProtocolo" value ="<fmt:formatDate value="${protocolo.dataProtocolo.time}" pattern="dd/MM/yyyy" />" > 
 					<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
 					
 					<label for="observacoes">Observações</label>  

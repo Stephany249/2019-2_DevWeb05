@@ -29,7 +29,7 @@
 								<td>${protocolo.idProtocolo}</td>
 								<td>${protocolo.origem}</td>
 								<td>${protocolo.destino}</td>
-								<td>${protcolo.dataProtocolo}</td>
+								<td><fmt:formatDate value="${protocolo.dataProtocolo.time}" pattern="dd/MM/yyyy" /></td>
 								<td>${protocolo.observacoes}</td>
 								<td><a href="editaProtocolo?id=${protocolo.idProtocolo}" title="Editar"><i class="fas fa-pencil-alt"></i></a></td>
 								<td><a href="removeProtocolo?idProtocolo=${protocolo.idProtocolo}" title="Excluir"><i class="fas fa-trash-alt"></i></a></td>

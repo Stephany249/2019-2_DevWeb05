@@ -22,7 +22,6 @@
 * Lista Protocolos:
 	Remover idProtocolo e idEmpresa (pq a empresa está logada é a unica que pode emitir e ver seus protocolos)
 	Alterar idCliente para CPFCNPJ_Cliente
-	Formatar a exibição da data
 	Arrumar as observação (Colocar um ícone exibe a obs)
 	
 * Emitir Protocolo:
@@ -32,12 +31,10 @@
 	Fazer o JOIN com a tabela de itens / itens-protoclos.
 	
 * Editar Protocolo:
-	Trocar "Alterar Protocolo : id"
 	Remover idEmpresa (pq a empresa está logada é a unica que pode emitir e ver seus protocolos)
 	Tirar o campo "idEmpresa
 	Colocar o Combo com os clientes cadastrados.
 	Fazer o JOIN com a tabela de clientes.
-	Formatar a exibição da data
 	
 * Excluir Protocolo:
 	Fazer uma mensagem de "Tem certeza que deseja excluir o protocolo?"
