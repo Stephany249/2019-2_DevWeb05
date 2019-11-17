@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import br.com.cadastro.model.Cliente;
+import br.com.cadastro.model.Empresa;
 
 @Repository
 public class ClienteDAO {
@@ -48,11 +49,12 @@ public class ClienteDAO {
 		}
 	}
 	
-	public List<Cliente> lista(){
+	public List<Cliente> lista(Empresa empresa){
 		try {
 			List<Cliente> clientes = new ArrayList<Cliente>();
-			PreparedStatement stmt = this.connection.prepareStatement
-			("SELECT * from clientes");
+			String sql = "select * from clientes where idEmpresa= ?";
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			stmt.setLong(1, empresa.getIdEmpresa());
 			ResultSet rs = stmt.executeQuery();
 			
 			while(rs.next()) {

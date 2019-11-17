@@ -1,5 +1,6 @@
 package br.com.cadastro.controller;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.cadastro.dao.ClienteDAO;
 import br.com.cadastro.model.Cliente;
+import br.com.cadastro.model.Empresa;
 
 @Controller
 public class ClienteController {
@@ -18,8 +20,8 @@ public class ClienteController {
 	ClienteDAO daoCliente;
 	
 	@RequestMapping("listaClientes")
-	public String lista(Model modelCliente)throws ClassNotFoundException{
-		modelCliente.addAttribute("cliente", daoCliente.lista());
+	public String lista(Model modelCliente, HttpSession session)throws ClassNotFoundException{
+		modelCliente.addAttribute("cliente", daoCliente.lista((Empresa)session.getAttribute("empresaLogada")));
 		return "../../resources/clientes";
 	}
 	
