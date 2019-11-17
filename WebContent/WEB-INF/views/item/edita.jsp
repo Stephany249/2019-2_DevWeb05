@@ -5,28 +5,32 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Alterar Item</title>
-</head>
-<body>
-	<c:import url="/WEB-INF/views/principal/menu.jsp"/>
-	<br />
-	Alterar Item: ${item.id}	
-	<br />
-	<br />
-	
-	<form action="alterarItem" method="post" class="form-horizontal">
-	
-	<input type="hidden" name="id" value="${item.id}"/>
-	
-	<label for="NomeItem">Nome Item</label>  
-	<input type="text" name="nomeItem" value="${item.nomeItem}" > 
-	<form:errors path="item.nomeItem" cssStyle="color:#B71C1C"/><br />
 
-	<input type="submit" value="Alterar">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Protocoli - Itens</title>
+		<link href="<c:url value="/resources/vendor/fontawesome-free/css/all.min.css" />" rel="stylesheet" type="text/css">
+		<link href="<c:url value="/resources/vendor/datatables/dataTables.bootstrap4.css" />" rel="stylesheet">
+		<link href="<c:url value="/resources/css/sb-admin.css" />" rel="stylesheet">
+	</head>
 	
-	</form>
-	
-</body>
+	<body>
+		<c:import url="/resources/navbar.jsp"/>
+		
+		<h2>Alterar Item: ${item.nomeItem}</h2>	
+		<br>
+		<form action="alterarItem" method="post" class="form-horizontal">
+			<input type="hidden" name="id" value="${item.id}"/>
+			<label for="NomeItem">Nome Item</label>  
+			<input type="text" name="nomeItem" value="${item.nomeItem}" > 
+			<form:errors path="item.nomeItem" cssStyle="color:#B71C1C"/>
+			<br><br>
+			<input type="submit" value="Alterar">
+		</form>
+		
+	</body>
 </html>
