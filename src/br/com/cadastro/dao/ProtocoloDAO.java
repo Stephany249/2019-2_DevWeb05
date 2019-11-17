@@ -10,6 +10,8 @@ import java.util.List;
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import br.com.cadastro.model.Empresa;
 import br.com.cadastro.model.Protocolo;
 
 @Repository
@@ -43,11 +45,13 @@ public class ProtocoloDAO {
 		}
 	}
 	
-	public List<Protocolo> lista(){
+	public List<Protocolo> lista(Empresa empresa){
 		try {
 			List<Protocolo> protocolos = new ArrayList<Protocolo>();
+			String sql = "select * from protocolos where origem = ?";
 			PreparedStatement stmt = this.connection.prepareStatement
-			("SELECT * from protocolos");
+			(sql);
+			stmt.setLong(1, empresa.getIdEmpresa());
 			ResultSet rs = stmt.executeQuery();
 			
 			while(rs.next()) {

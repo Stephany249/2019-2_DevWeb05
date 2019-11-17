@@ -1,30 +1,27 @@
-* Tela de Cadastro:
-	Adicionar os Radios para CPF/CNPJ no cadastro. (Precisa?)
-
 * NavBar:
-	Colocar os ícones do usuário alinhados à direita
+	Colocar os ï¿½cones do usuï¿½rio alinhados ï¿½ direita
 
-* Configurações:
+* Configuraï¿½ï¿½es:
 	Ajustar o Layout
 	
 * Clientes:
-	Adicionar o número de página na tabela da lista
+	Adicionar o nï¿½mero de pï¿½gina na tabela da lista
 	Fazer uma mensagem de "Tem certeza que deseja excluir o cliente?"
 	Ajustar o Layout do Inserir e Editar 
 	
 * Lista Protocolos:
-	Remover idProtocolo e idEmpresa (pq a empresa está logada é a unica que pode emitir e ver seus protocolos)
+	Remover idProtocolo e idEmpresa (pq a empresa estï¿½ logada ï¿½ a unica que pode emitir e ver seus protocolos)
 	Alterar idCliente para CPFCNPJ_Cliente
-	Arrumar as observação (Colocar um ícone exibe a obs)
+	Arrumar as observaï¿½ï¿½o (Colocar um ï¿½cone exibe a obs)
 	
 * Emitir Protocolo:
 	Colocar o Combo com os clientes cadastrados.
 	Fazer o JOIN com a tabela de clientes.
-	Colocar o Combo com os itens cadastrados e a opção de cadastrar o item ao emitir o protocolo.
+	Colocar o Combo com os itens cadastrados e a opï¿½ï¿½o de cadastrar o item ao emitir o protocolo.
 	Fazer o JOIN com a tabela de itens / itens-protoclos.
 	
 * Editar Protocolo:
-	Remover idEmpresa (pq a empresa está logada é a unica que pode emitir e ver seus protocolos)
+	Remover idEmpresa (pq a empresa estï¿½ logada ï¿½ a unica que pode emitir e ver seus protocolos)
 	Tirar o campo "idEmpresa
 	Colocar o Combo com os clientes cadastrados.
 	Fazer o JOIN com a tabela de clientes.

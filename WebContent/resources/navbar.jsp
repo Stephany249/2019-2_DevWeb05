@@ -37,7 +37,7 @@
       
       <li class="nav-item">
         <a class="nav-link" href="listaClientes">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="far fa-address-card"></i>
           <span>Clientes</span></a>
       </li>
       

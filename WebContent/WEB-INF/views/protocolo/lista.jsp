@@ -16,7 +16,7 @@
 				<div class="table-responsive">
 					<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 						<tr>
-							<th>Id</th>
+							<th>Número</th>
 							<th>Origem (id Empresa)</th>
 							<th>Destino (id Cliente)</th>
 							<th>Data</th>
