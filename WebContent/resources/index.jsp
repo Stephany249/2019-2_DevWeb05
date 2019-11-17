@@ -23,7 +23,7 @@
 		
 		<div id="content-wrapper">
 			<div class="container-fluid">
-			<h4>Olá ${empresaLogada.email}. Seja bem-vindo(a) ao Protocoli.</h4><br>
+			<h4>Olá ${empresaLogada.nomeEmpresa}. Seja bem-vindo(a) ao Protocoli.</h4><br>
 			   <!-- Icon Cards-->
 			      <div class="row">
 			        <div class="col-xl-3 col-sm-6 mb-3">

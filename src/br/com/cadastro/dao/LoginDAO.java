@@ -32,6 +32,7 @@ public class LoginDAO {
 			if(rs.next())
 			{
 				empresa.setIdEmpresa(rs.getLong("id"));
+				empresa.setNomeEmpresa(rs.getString("nomeEmpresa"));
 				stmt.close();
 				return true;
 			}
