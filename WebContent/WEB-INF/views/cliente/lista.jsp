@@ -11,17 +11,16 @@
 <body>
 	<div class="card mb-3">
 		<div class="card-header">
-		<i class="fas fa-table"></i> Lista de Clientes</div>
+		<i class="fas fa-table"></i> Meus Clientes</div>
 			<div class="card-body">
 				<div class="table-responsive">
 					<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 						<tr>
-							<th>Nome Cliente</th>
-							<th>CPF/CNPJ Cliente</th>
+							<th>Nome do Cliente</th>
+							<th>CPF/CNPJ do Cliente</th>
 							<th>Telefone</th>
 							<th>E-mail</th>
 							<th>Endereço</th>
-							<th>Id Empresa</th>
 							<th>Editar</th>
 							<th>Excluir</th>
 						</tr>
@@ -32,7 +31,6 @@
 								<td>${cliente.telefone}</td>
 								<td>${cliente.email}</td>
 								<td>${cliente.endereco}</td>
-								<td>${cliente.idEmpresa}</td>
 								<td><a href="editaCliente?id=${cliente.idCliente}" title="Editar"><i class="fas fa-pencil-alt"></i></a></td>
 								<td><a href="removeCliente?idCliente=${cliente.idCliente}" title="Excluir"><i class="fas fa-trash-alt"></i></a></td>
 							</tr>

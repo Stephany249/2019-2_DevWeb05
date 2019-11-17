@@ -20,26 +20,28 @@
 	
 	<body>
 		<c:import url="/resources/navbar.jsp"/>
-		<br/>
-		Alterar Cliente:	
-		<br/>
-		<br/>
+		
+		<h2>Editar Cadastro de ${cliente.nomeCliente}</h2>
 		
 		<form action="alterarCliente" method="post" class="form-horizontal">
 		
 					<input type="hidden" name="idCliente" value="${cliente.idCliente}"/><br/>
 		
-					<label for="NomeCliente">Nome Cliente</label>  
+					<label for="NomeCliente">Nome do Cliente</label>  
 					<input type="text" name="nomeCliente" value="${cliente.nomeCliente}" > 
 					<form:errors path="cliente.nomeCliente" cssStyle="color:#B71C1C"/><br />
 		
-					<label for="CPF_CNPJCliente">CPF/CNPJ Cliente</label>  
+					<label for="CPF_CNPJCliente">CPF/CNPJ do Cliente</label>  
 					<input type="text" name="CPF_CNPJCliente" value="${cliente.CPF_CNPJCliente}" >
 					<form:errors path="cliente.CPF_CNPJCliente" cssStyle="color:#B71C1C"/><br />
 					
 					<label for="Telefone">Telefone</label>  
 					<input type="text" name="telefone" value="${cliente.telefone}" >
 					<form:errors path="cliente.telefone" cssStyle="color:#B71C1C"/><br />
+					
+					<label for="Endereco">Endereço</label>  
+					<input type="text" name="endereco" value="${cliente.endereco}" >
+					<form:errors path="cliente.endereco" cssStyle="color:#B71C1C"/><br />
 					
 					<label for="Email">E-mail</label>  
 					<input type="text" name="email" value="${cliente.email}" >
@@ -49,12 +51,7 @@
 					<input type="password" name="senha" value="${cliente.senha}" >
 					<form:errors path="cliente.senha" cssStyle="color:#B71C1C"/><br />
 					
-					<label for="Endereco">Endereço</label>  
-					<input type="text" name="endereco" value="${cliente.endereco}" >
-					<form:errors path="cliente.endereco" cssStyle="color:#B71C1C"/><br />
-					
-					<label for="IdEmpresa">Id Empresa</label>  
-					<input type="text" name="IdEmpresa" value="${cliente.idEmpresa}" >
+					<input type="hidden" name="IdEmpresa" value="${empresaLogada.idEmpresa}" >
 					<form:errors path="cliente.IdEmpresa" cssStyle="color:#B71C1C"/><br />
 			
 	

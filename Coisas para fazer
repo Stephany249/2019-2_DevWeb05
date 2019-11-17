@@ -1,5 +1,5 @@
 * Tela de Cadastro:
-	Adicionar os Radios para CPF/CNPJ no cadastro. (Precisa? Acho melhor deixar cadastrar apenas com CNPJ...)
+	Adicionar os Radios para CPF/CNPJ no cadastro. (Precisa?)
 
 * NavBar:
 	Colocar os ícones do usuário alinhados à direita
@@ -7,18 +7,10 @@
 * Configurações:
 	Ajustar o Layout
 	
-* Lista Clientes:
-	Adicionar o número de página na tabela
-	Fazer o JOIN com a tabela de empresas, para exibir apenas os clientes associados à empresa logada.
-	
-* Cadastrar Cliente:
-	Tirar o campo "idEmpresa"
-	
-* Editar Cliente:
-	Tirar o campo "idEmpresa
-	
-* Excluir Cliente:
+* Clientes:
+	Adicionar o número de página na tabela da lista
 	Fazer uma mensagem de "Tem certeza que deseja excluir o cliente?"
+	Ajustar o Layout do Inserir e Editar 
 	
 * Lista Protocolos:
 	Remover idProtocolo e idEmpresa (pq a empresa está logada é a unica que pode emitir e ver seus protocolos)
