@@ -27,11 +27,11 @@ public class LoginDAO {
 			stmt.setString(2, empresa.getSenha());
 			
 			ResultSet rs = stmt.executeQuery();
-			
 			stmt.execute();
 			
 			if(rs.next())
 			{
+				empresa.setIdEmpresa(rs.getLong("id"));
 				stmt.close();
 				return true;
 			}

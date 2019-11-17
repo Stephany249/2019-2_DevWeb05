@@ -12,7 +12,7 @@
 	          <i class="fas fa-user-circle fa-fw"></i>
 	        </a>
 	        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-	          <a class="dropdown-item" href="#">Configurações</a>
+	          <a class="dropdown-item" href="editaEmpresa?id=${empresaLogada.idEmpresa}">Configurações</a>
 	          <div class="dropdown-divider"></div>
 	          <a class="dropdown-item" href="logout">Sair</a>
 	          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"></a>
@@ -33,12 +33,6 @@
           <i class="fa fa-home fa-fw" aria-hidden="true"></i>
           <span>Home</span>
         </a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="listaEmpresas">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Empresas</span></a>
       </li>
       
       <li class="nav-item">

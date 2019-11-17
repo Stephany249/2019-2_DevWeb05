@@ -3,8 +3,7 @@
 
 * NavBar:
 	Colocar os ícones do usuário alinhados à direita
-	Fazer a tela Configurações (Editar Empresa passando o id da empresa logada)
-	Remover o link para "Empresas"
+	Fazer a tela Configurações
 	
 * Lista Clientes:
 	Adicionar o número de página na tabela

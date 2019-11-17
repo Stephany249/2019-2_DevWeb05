@@ -49,7 +49,7 @@ public class EmpresaController {
 			return "empresa/edita";
 		}
 		daoEmpresa.alterar(empresa);
-		return "redirect:listaEmpresas";
+		return "redirect:listaPrincipal";
 	}
 	
 	@RequestMapping("removeEmpresa")
@@ -57,4 +57,5 @@ public class EmpresaController {
 		daoEmpresa.remove(empresa);
 		return "redirect:listaEmpresas";
 	}
+    
 }

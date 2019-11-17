@@ -11,12 +11,12 @@ import br.com.cadastro.model.Empresa;
 @Controller
 public class LoginController{
 
-    @RequestMapping("loginForm") //envia para a mesma pagina
+    @RequestMapping("loginForm")
     public String loginForm() {
         return "../../resources/login";
     }
    
-    @RequestMapping("efetuaLogin") //autentica e loga
+    @RequestMapping("efetuaLogin")
     public String efetuaLogin(Empresa empresa, HttpSession session) throws ClassNotFoundException {
         if(new LoginDAO().existeEmpresa(empresa)) {
             session.setAttribute("empresaLogada", empresa);
@@ -25,7 +25,7 @@ public class LoginController{
         return "redirect:loginForm";
     }
     
-    @RequestMapping("logout") //desloga
+    @RequestMapping("logout")
     public String logout(HttpSession session) {
         session.invalidate();
         return "redirect:loginForm";
