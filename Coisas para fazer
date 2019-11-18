@@ -1,6 +1,3 @@
-* NavBar:
-	Colocar os �cones do usu�rio alinhados � direita
-
 * Configura��es:
 	Ajustar o Layout
 	
@@ -28,11 +25,6 @@
 	
 * Excluir Protocolo:
 	Fazer uma mensagem de "Tem certeza que deseja excluir o protocolo?"
-	
-* Lista Itens:
-	Formatar a Tabela
-	Mover o Castrar para baixo
-	Tiraro Combo
 
 * Criar e Editar Item:
 	Adicionar o novo layout
