@@ -28,7 +28,7 @@
 						<c:forEach items="${protocolo}" var="protocolo">
 							<tr>
 								<td>${protocolo.idProtocolo}</td>
-								<td>${empresa.nomeEmpresa}</td>
+								<td>${empresaLogada.nomeEmpresa}</td>
 								<td>${cliente.nomeCliente}</td>
 								<td>${item.nomeItem}</td>
 								<td>${protocolo.dataProtocolo}</td>
