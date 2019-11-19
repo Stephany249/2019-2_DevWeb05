@@ -1,12 +1,12 @@
 package br.com.cadastro.model;
 
-import java.util.Calendar;
+import java.sql.Date;
 
 public class Protocolo {
     private Long idProtocolo;
     private Long origem;
     private Long destino;
-    private Calendar dataProtocolo;
+    private Date dataProtocolo;
     private String observacoes;
     
 	public Long getIdProtocolo() {
@@ -27,10 +27,10 @@ public class Protocolo {
 	public void setDestino(Long destino) {
 		this.destino = destino;
 	}
-	public Calendar getDataProtocolo() {
+	public Date getDataProtocolo() {
 		return dataProtocolo;
 	}
-	public void setDataProtocolo(Calendar dataProtocolo) {
+	public void setDataProtocolo(Date dataProtocolo) {
 		this.dataProtocolo = dataProtocolo;
 	}
 	public String getObservacoes() {

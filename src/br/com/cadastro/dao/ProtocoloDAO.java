@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +34,7 @@ public class ProtocoloDAO {
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
 			stmt.setLong(1, protocolo.getOrigem());
 			stmt.setLong(2, protocolo.getDestino());
-			stmt.setDate(3, new java.sql.Date(protocolo.getDataProtocolo().getTimeInMillis()));
+			stmt.setDate(3, protocolo.getDataProtocolo());
 			stmt.setString(4, protocolo.getObservacoes());
 			stmt.execute();
 			stmt.close();
@@ -62,11 +61,7 @@ public class ProtocoloDAO {
 				protocolo.setIdProtocolo(rs.getLong("id"));
 				empresa.setNomeEmpresa(rs.getString("nomeEmpresa"));
 				cliente.setNomeCliente(rs.getString("nomeCliente"));
-				//protocolo.setOrigem(rs.getLong("protocolo.origem"));
-				//protocolo.setDestino(rs.getLong("protocolo.destino"));
-				Calendar dataProtocolo = Calendar.getInstance();
-				dataProtocolo.setTime(rs.getDate("dataProtocolo"));
-				protocolo.setDataProtocolo(dataProtocolo);
+				protocolo.setDataProtocolo(rs.getDate("dataProtocolo"));
 				protocolo.setObservacoes(rs.getString("observacoes"));
 				empresas.add(empresa);
 				protocolos.add(protocolo);
@@ -106,9 +101,7 @@ public class ProtocoloDAO {
 					protocolo.setIdProtocolo(rs.getLong("id"));
 					protocolo.setOrigem(rs.getLong("origem"));
 					protocolo.setDestino(rs.getLong("destino"));
-					Calendar dataProtocolo = Calendar.getInstance();
-					dataProtocolo.setTime(rs.getDate("dataProtocolo"));
-					protocolo.setDataProtocolo(dataProtocolo);
+					protocolo.setDataProtocolo(rs.getDate("dataProtocolo"));
 					protocolo.setObservacoes(rs.getString("observacoes"));
 
 					return protocolo;
@@ -129,7 +122,7 @@ public class ProtocoloDAO {
 
 			stmt.setLong(1, protocolo.getOrigem());
 			stmt.setLong(2, protocolo.getDestino());
-			stmt.setDate(3, new java.sql.Date(protocolo.getDataProtocolo().getTimeInMillis()));
+			stmt.setDate(3, protocolo.getDataProtocolo());
 			stmt.setString(4, protocolo.getObservacoes());
 			stmt.setLong(5, protocolo.getIdProtocolo());
 			stmt.execute();

@@ -20,32 +20,29 @@
 	
 	<body>
 		<c:import url="/resources/navbar.jsp"/>
-		<br/>
-		Alterar Protocolo:
-		<br/>
-		<br/>
+		<h2>Editar Protocolo</h2>
 		
 		<form action="alterarProtocolo" method="post" class="form-horizontal">
 		
-					<input type="hidden" name="idProtocolo" value="${protocolo.idProtocolo}"/><br/>
-		
-					<label for="origem">Origem (id Empresa)</label>  
-					<input type="text" name="origem" value="${protocolo.origem}" >
-					<form:errors path="protocolo.origem" cssStyle="color:#B71C1C"/><br />
-					
-					<label for="destino">Destino (id Cliente)</label>  
-					<input type="text" name="destino" value="${protocolo.destino}" >
-					<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
-					
-					<label for="dataProtocolo">Data</label>  
-					<input type="text" name="dataProtocolo" value ="<fmt:formatDate value="${protocolo.dataProtocolo.time}" pattern="dd/MM/yyyy" />" > 
-					<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
-					
-					<label for="observacoes">Observações</label>  
-					<input type="text" name="observacoes" value="${protocolo.observacoes}" >
-					<form:errors path="protocolo.observacoes" cssStyle="color:#B71C1C"/><br />		
+			<input type="hidden" name="idProtocolo" value="${protocolo.idProtocolo}"/><br/>
+
+			<label for="origem">Origem (id Empresa)</label>  
+			<input type="text" name="origem" value="${protocolo.origem}" >
+			<form:errors path="protocolo.origem" cssStyle="color:#B71C1C"/><br />
+			
+			<label for="destino">Destino (id Cliente)</label>  
+			<input type="text" name="destino" value="${protocolo.destino}" >
+			<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
+			
+			<label for="dataProtocolo">Data</label>  
+			<input type="date" name="dataProtocolo" value ="${protocolo.dataProtocolo.time}" /> 
+			<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
+			
+			<label for="observacoes">Observações</label>  
+			<input type="text" name="observacoes" value="${protocolo.observacoes}" >
+			<form:errors path="protocolo.observacoes" cssStyle="color:#B71C1C"/><br />		
 	
-		<input type="submit" value="Alterar">
+			<input type="submit" value="Alterar">
 		
 		</form>
 		

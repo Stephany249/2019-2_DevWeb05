@@ -20,30 +20,28 @@
 	
 	<body>
 		<c:import url="/resources/navbar.jsp"/>
-		<br />
+		<h2>Emitir Novo Protocolo</h2>
+		<br>
+		<form action="adicionaProtocolo" method="post">
+						
+			<label for="origem">Origem: ${empresaLogada.nomeEmpresa} </label>  
+			<input type="hidden" name="origem" value="${empresaLogada.idEmpresa}" >
+			<form:errors path="protocolo.origem" cssStyle="color:#B71C1C"/><br />
 			
-			Emitir Novo Protocolo <br /><br />
+			<label for="destino">Destino: </label>  
+			<input type="text" name="destino" value="${protocolo.destino}" >
+			<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
 			
-			<form action="adicionaProtocolo" method="post">
-							
-						<label for="origem">Origem (id Empresa)</label>  
-						<input type="text" name="origem" value="${protocolo.origem}" >
-						<form:errors path="protocolo.origem" cssStyle="color:#B71C1C"/><br />
-						
-						<label for="destino">Destino (id Cliente)</label>  
-						<input type="text" name="destino" value="${protocolo.destino}" >
-						<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
-						
-						<label for="dataProtocolo">Data</label>  
-						<input type="date" name="dataProtocolo" value="${protocolo.dataProtocolo}">
-						<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
-						
-						<label for="observacoes">Observações</label>  
-						<input type="text" name="observacoes" value="${protocolo.observacoes}" >
-						<form:errors path="protocolo.observacoes" cssStyle="color:#B71C1C"/><br />
-						
-						<input type="submit" value="Criar">
-				
-			</form>
-		</body>
+			<label for="dataProtocolo">Data: </label>  
+			<input type="date" name="dataProtocolo" value="${protocolo.dataProtocolo}">
+			<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
+			
+			<label for="observacoes">Observações: </label>  
+			<input type="text" name="observacoes" value="${protocolo.observacoes}" >
+			<form:errors path="protocolo.observacoes" cssStyle="color:#B71C1C"/><br />
+			<br>
+			<input type="submit" value="Emitir">
+			
+		</form>
+	</body>
 </html>
