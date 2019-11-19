@@ -28,9 +28,9 @@
 						<c:forEach items="${protocolo}" var="protocolo">
 							<tr>
 								<td>${protocolo.idProtocolo}</td>
-								<td>${empresaLogada.nomeEmpresa}</td>
-								<td>${cliente.nomeCliente}</td>
-								<td>${item.nomeItem}</td>
+								<td>${protocolo.nomeEmpresa}</td>
+								<td>${protocolo.nomeCliente}</td>
+								<td></td>
 								<td>${protocolo.dataProtocolo}</td>
 								<td>${protocolo.observacoes}</td>
 								<td><a href="editaProtocolo?id=${protocolo.idProtocolo}" title="Editar"><i class="fas fa-pencil-alt"></i></a></td>

@@ -57,16 +57,13 @@ public class ProtocoloDAO {
 
 			while (rs.next()) {
 				Protocolo protocolo = new Protocolo();
-				Cliente cliente = new Cliente();
-				Item item = new Item();
-
+				
 				protocolo.setIdProtocolo(rs.getLong("id"));
-				empresa.setNomeEmpresa(rs.getString("nomeEmpresa"));
-				cliente.setNomeCliente(rs.getString("nomeCliente"));
-				//item.setNomeItem(rs.getString("nomeItem"));
+				protocolo.setNomeEmpresa(rs.getString("nomeEmpresa"));
+				protocolo.setNomeCliente(rs.getString("nomeCliente"));
+				//protocolo.setNomeItem(rs.getString("nomeItem"));
 				protocolo.setDataProtocolo(rs.getDate("dataProtocolo"));
 				protocolo.setObservacoes(rs.getString("observacoes"));
-				empresas.add(empresa);
 				protocolos.add(protocolo);
 
 			}
