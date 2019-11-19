@@ -8,14 +8,11 @@
 	Ajustar o Layout do Cadastrar e Editar 
 	
 * Lista Protocolos:
-	Mostrar o Item
 	Formatar a Data - USANDO DATE
 	
 * Emitir Protocolo:
 	Colocar o Combo com os clientes cadastrados.
-	Fazer o JOIN com a tabela de clientes.
 	Colocar o Combo com os itens cadastrados e a opção de cadastrar o item ao emitir o protocolo.
-	Fazer o JOIN com a tabela de itens / itens-protoclos.
 	
 * Editar Protocolo:
 	Remover idEmpresa

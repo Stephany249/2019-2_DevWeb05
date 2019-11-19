@@ -30,7 +30,7 @@
 								<td>${protocolo.idProtocolo}</td>
 								<td>${protocolo.nomeEmpresa}</td>
 								<td>${protocolo.nomeCliente}</td>
-								<td></td>
+								<td>${protocolo.nomeItem}</td>
 								<td>${protocolo.dataProtocolo}</td>
 								<td>${protocolo.observacoes}</td>
 								<td><a href="editaProtocolo?id=${protocolo.idProtocolo}" title="Editar"><i class="fas fa-pencil-alt"></i></a></td>

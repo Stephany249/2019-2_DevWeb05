@@ -49,8 +49,9 @@ public class ProtocoloDAO {
 		try {
 			List<Protocolo> protocolos = new ArrayList<Protocolo>();
 			List<Empresa> empresas = new ArrayList<Empresa>();
-			String sql = "SELECT protocolos.id, empresas.nomeEmpresa, clientes.nomeCliente, protocolos.dataProtocolo, protocolos.observacoes from clientes join protocolos join empresas where protocolos.origem = ? and protocolos.origem = empresas.id and (protocolos.destino = clientes.id)";
-			//String sql = "select * from protocolos where origem = ?";
+			String sql = "SELECT protocolos.id, empresas.nomeEmpresa, clientes.nomeCliente, protocolos.dataProtocolo, itens.nomeItem, protocolos.observacoes "
+					+ "from clientes join protocolos join empresas join itens where protocolos.origem = ? "
+					+ "and protocolos.origem = empresas.id and (protocolos.destino = clientes.id) and (protocolos.idItem = itens.id)";
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
 			stmt.setLong(1, empresa.getIdEmpresa());
 			ResultSet rs = stmt.executeQuery();
@@ -61,7 +62,7 @@ public class ProtocoloDAO {
 				protocolo.setIdProtocolo(rs.getLong("id"));
 				protocolo.setNomeEmpresa(rs.getString("nomeEmpresa"));
 				protocolo.setNomeCliente(rs.getString("nomeCliente"));
-				//protocolo.setNomeItem(rs.getString("nomeItem"));
+				protocolo.setNomeItem(rs.getString("nomeItem"));
 				protocolo.setDataProtocolo(rs.getDate("dataProtocolo"));
 				protocolo.setObservacoes(rs.getString("observacoes"));
 				protocolos.add(protocolo);
