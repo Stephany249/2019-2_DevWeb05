@@ -35,7 +35,7 @@
 			<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
 			
 			<label for="dataProtocolo">Data</label>  
-			<input type="date" name="dataProtocolo" value ="${protocolo.dataProtocolo.time}" /> 
+			<input type="date" name="dataProtocolo" value ="${protocolo.dataProtocolo}" /> 
 			<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
 			
 			<label for="observacoes">Observações</label>  
