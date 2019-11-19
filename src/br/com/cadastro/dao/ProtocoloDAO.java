@@ -29,14 +29,15 @@ public class ProtocoloDAO {
 	}
 
 	public void adiciona(Protocolo protocolo) {
-		String sql = "insert into protocolos (origem, destino, dataProtocolo, observacoes) " + "values (?, ?, ?, ?)";
+		String sql = "insert into protocolos (origem, destino, dataProtocolo, idItem, observacoes) " + "values (?, ?, ?, ?, ?)";
 
 		try {
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
 			stmt.setLong(1, protocolo.getOrigem());
 			stmt.setLong(2, protocolo.getDestino());
 			stmt.setDate(3, protocolo.getDataProtocolo());
-			stmt.setString(4, protocolo.getObservacoes());
+			stmt.setLong(4, protocolo.getIdItem());
+			stmt.setString(5, protocolo.getObservacoes());
 			stmt.execute();
 			stmt.close();
 

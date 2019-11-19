@@ -30,7 +30,7 @@ public class ProtocoloController {
 	
 	@RequestMapping("adicionaProtocolo")
 	public String adiciona(@Valid Protocolo protocolo, BindingResult result) throws ClassNotFoundException{
-		if(result.hasFieldErrors("origem") || result.hasFieldErrors("destino") || result.hasFieldErrors("dataProtocolo") || result.hasFieldErrors("observacoes") ) {
+		if(result.hasFieldErrors("origem") || result.hasFieldErrors("destino") || result.hasFieldErrors("dataProtocolo") || result.hasFieldErrors("idItem") || result.hasFieldErrors("observacoes") ) {
 			return "protocolo/insere";
 		}
 		daoProtocolo.adiciona(protocolo);

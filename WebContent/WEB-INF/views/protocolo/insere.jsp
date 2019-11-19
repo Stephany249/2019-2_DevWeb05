@@ -36,6 +36,10 @@
 			<input type="date" name="dataProtocolo" value="${protocolo.dataProtocolo}">
 			<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
 			
+			<label for="destino">Item: </label>  
+			<input type="text" name="idItem" value="${protocolo.idItem}" >
+			<form:errors path="protocolo.idItem" cssStyle="color:#B71C1C"/><br />
+			
 			<label for="observacoes">Observações: </label>  
 			<input type="text" name="observacoes" value="${protocolo.observacoes}" >
 			<form:errors path="protocolo.observacoes" cssStyle="color:#B71C1C"/><br />
