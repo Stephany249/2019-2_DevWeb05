@@ -19,14 +19,12 @@
 				<table class="table table-bordered" id="dataTable" width="100%"
 					cellspacing="0">
 					<tr>
-						<th>Id</th>
-						<th>Nome Item</th>
+						<th>Nome do Item</th>
 						<th>Editar</th>
 						<th>Excluir</th>
 					</tr>
 					<c:forEach items="${item}" var="item">
 						<tr>
-							<td>${item.id}</td>
 							<td>${item.nomeItem}</td>
 							<td><a href="editaItem?id=${item.id}" title="Editar"><i class="fas fa-pencil-alt"></i></a></td>
 							<td><a href="removeItem?id=${item.id}" title="Excluir"><i class="fas fa-trash-alt"></i></a></td>
