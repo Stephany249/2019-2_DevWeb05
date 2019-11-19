@@ -45,7 +45,7 @@ public class ProtocoloController {
 	
 	@RequestMapping("alterarProtocolo")
 	public String alterar(@Valid Protocolo protocolo, BindingResult result) throws ClassNotFoundException {
-		if(result.hasFieldErrors("origem") || result.hasFieldErrors("destino") || result.hasFieldErrors("dataProtocolo") || result.hasFieldErrors("observacoes") ) {
+		if(result.hasFieldErrors("origem") || result.hasFieldErrors("destino") || result.hasFieldErrors("dataProtocolo") || result.hasFieldErrors("idItem") || result.hasFieldErrors("observacoes") ) {
 			return "protocolo/edita";
 		}
 		daoProtocolo.alterar(protocolo);

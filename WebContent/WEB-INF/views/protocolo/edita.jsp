@@ -26,19 +26,23 @@
 		
 			<input type="hidden" name="idProtocolo" value="${protocolo.idProtocolo}"/><br/>
 
-			<label for="origem">Origem (id Empresa)</label>  
-			<input type="text" name="origem" value="${protocolo.origem}" >
+			<label for="origem">Origem: ${empresaLogada.nomeEmpresa}</label>  
+			<input type="hidden" name="origem" value="${empresaLogada.idEmpresa}" >
 			<form:errors path="protocolo.origem" cssStyle="color:#B71C1C"/><br />
 			
-			<label for="destino">Destino (id Cliente)</label>  
+			<label for="destino">Destino: </label>  
 			<input type="text" name="destino" value="${protocolo.destino}" >
 			<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
 			
-			<label for="dataProtocolo">Data</label>  
+			<label for="dataProtocolo">Data: </label>  
 			<input type="date" name="dataProtocolo" value ="${protocolo.dataProtocolo}" /> 
 			<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
 			
-			<label for="observacoes">Observações</label>  
+			<label for="destino">Item: </label>  
+			<input type="text" name="idItem" value="${protocolo.idItem}" >
+			<form:errors path="protocolo.idItem" cssStyle="color:#B71C1C"/><br />
+			
+			<label for="observacoes">Observações: </label>  
 			<input type="text" name="observacoes" value="${protocolo.observacoes}" >
 			<form:errors path="protocolo.observacoes" cssStyle="color:#B71C1C"/><br />		
 	

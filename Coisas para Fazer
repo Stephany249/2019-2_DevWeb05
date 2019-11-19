@@ -9,13 +9,11 @@
 	
 * Emitir Protocolo:
 	Colocar o Combo com os clientes cadastrados.
-	Colocar o Combo com os itens cadastrados e a opção de cadastrar o item ao emitir o protocolo.
+	Colocar o Combo com os itens cadastrados.
 	
 * Editar Protocolo:
-	Remover idEmpresa
-	Tirar o campo "idEmpresa
 	Colocar o Combo com os clientes cadastrados.
-	Fazer o JOIN com a tabela de clientes.
+	Colocar o Combo com os itens cadastrados.
 	
 * Excluir Protocolo:
 	Fazer uma mensagem de "Tem certeza que deseja excluir o protocolo?"

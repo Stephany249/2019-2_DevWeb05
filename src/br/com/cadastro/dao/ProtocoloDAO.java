@@ -103,6 +103,7 @@ public class ProtocoloDAO {
 					protocolo.setIdProtocolo(rs.getLong("id"));
 					protocolo.setOrigem(rs.getLong("origem"));
 					protocolo.setDestino(rs.getLong("destino"));
+					protocolo.setIdItem(rs.getLong("idItem"));
 					protocolo.setDataProtocolo(rs.getDate("dataProtocolo"));
 					protocolo.setObservacoes(rs.getString("observacoes"));
 
@@ -117,7 +118,7 @@ public class ProtocoloDAO {
 	}
 
 	public void alterar(Protocolo protocolo) {
-		String sql = "update protocolos set origem=?, destino=?, dataProtocolo=?, observacoes=? where id = ?";
+		String sql = "update protocolos set origem=?, destino=?, dataProtocolo=?, idItem=?, observacoes=? where id = ?";
 
 		try {
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
@@ -125,8 +126,9 @@ public class ProtocoloDAO {
 			stmt.setLong(1, protocolo.getOrigem());
 			stmt.setLong(2, protocolo.getDestino());
 			stmt.setDate(3, protocolo.getDataProtocolo());
-			stmt.setString(4, protocolo.getObservacoes());
-			stmt.setLong(5, protocolo.getIdProtocolo());
+			stmt.setLong(4, protocolo.getIdItem());
+			stmt.setString(5, protocolo.getObservacoes());
+			stmt.setLong(6, protocolo.getIdProtocolo());
 			stmt.execute();
 			stmt.close();
 
