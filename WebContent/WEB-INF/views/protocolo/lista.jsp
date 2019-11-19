@@ -19,6 +19,7 @@
 							<th>Número</th>
 							<th>Origem</th>
 							<th>Destino</th>
+							<th>Item</th>
 							<th>Data</th>
 							<th>Observações</th>
 							<th>Editar</th>
@@ -29,6 +30,7 @@
 								<td>${protocolo.idProtocolo}</td>
 								<td>${empresa.nomeEmpresa}</td>
 								<td>${cliente.nomeCliente}</td>
+								<td>${item.nomeItem}</td>
 								<td>${protocolo.dataProtocolo}</td>
 								<td>${protocolo.observacoes}</td>
 								<td><a href="editaProtocolo?id=${protocolo.idProtocolo}" title="Editar"><i class="fas fa-pencil-alt"></i></a></td>

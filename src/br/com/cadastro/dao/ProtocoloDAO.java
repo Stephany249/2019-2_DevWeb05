@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 
 import br.com.cadastro.model.Cliente;
 import br.com.cadastro.model.Empresa;
+import br.com.cadastro.model.Item;
 import br.com.cadastro.model.Protocolo;
 
 @Repository
@@ -57,10 +58,12 @@ public class ProtocoloDAO {
 			while (rs.next()) {
 				Protocolo protocolo = new Protocolo();
 				Cliente cliente = new Cliente();
+				Item item = new Item();
 
 				protocolo.setIdProtocolo(rs.getLong("id"));
 				empresa.setNomeEmpresa(rs.getString("nomeEmpresa"));
 				cliente.setNomeCliente(rs.getString("nomeCliente"));
+				//item.setNomeItem(rs.getString("nomeItem"));
 				protocolo.setDataProtocolo(rs.getDate("dataProtocolo"));
 				protocolo.setObservacoes(rs.getString("observacoes"));
 				empresas.add(empresa);
