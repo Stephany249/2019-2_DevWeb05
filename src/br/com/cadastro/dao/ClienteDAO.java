@@ -29,8 +29,8 @@ public class ClienteDAO {
 	}
 	
 	public void adiciona(Cliente cliente) {
-		String sql = "insert into clientes (nomeCliente, CPF_CNPJCliente, telefone, email, senha, endereco, IdEmpresa) " + 
-					"values (?, ?, ?, ?, MD5(?), ?, ?)";
+		String sql = "insert into clientes (nomeCliente, CPF_CNPJCliente, telefone, email, endereco, IdEmpresa) " + 
+					"values (?, ?, ?, ?, ?, ?)";
 		
 		try {
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
@@ -38,9 +38,8 @@ public class ClienteDAO {
 			stmt.setLong(2, cliente.getCPF_CNPJCliente());
 			stmt.setLong(3, cliente.getTelefone());
 			stmt.setString(4, cliente.getEmail());
-			stmt.setString(5, cliente.getSenha());
-			stmt.setString(6, cliente.getEndereco());
-			stmt.setLong(7, cliente.getIdEmpresa());
+			stmt.setString(5, cliente.getEndereco());
+			stmt.setLong(6, cliente.getIdEmpresa());
 			stmt.execute();
 			stmt.close();
 			
@@ -65,7 +64,6 @@ public class ClienteDAO {
 				cliente.setCPF_CNPJCliente(rs.getLong("CPF_CNPJCliente"));
 				cliente.setTelefone(rs.getLong("telefone"));
 				cliente.setEmail(rs.getString("email"));
-				cliente.setSenha(rs.getString("senha"));
 				cliente.setEndereco(rs.getString("endereco"));
 				cliente.setIdEmpresa(rs.getLong("IdEmpresa"));
 				clientes.add(cliente);
@@ -110,7 +108,6 @@ public class ClienteDAO {
 					cliente.setCPF_CNPJCliente(rs.getLong("CPF_CNPJCliente"));
 					cliente.setTelefone(rs.getLong("telefone"));
 					cliente.setEmail(rs.getString("email"));
-					cliente.setSenha(rs.getString("senha"));
 					cliente.setEndereco(rs.getString("endereco"));
 					cliente.setIdEmpresa(rs.getLong("IdEmpresa"));
 					
@@ -125,7 +122,7 @@ public class ClienteDAO {
 	}
 	
 	public void alterar(Cliente cliente) {
-		String sql = "update clientes set nomeCliente=?, CPF_CNPJCliente=?, telefone=?, email=?, senha=MD5(?), endereco=?, IdEmpresa=? where id = ?";
+		String sql = "update clientes set nomeCliente=?, CPF_CNPJCliente=?, telefone=?, email=?, endereco=?, IdEmpresa=? where id = ?";
 		
 		try {
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
@@ -134,10 +131,9 @@ public class ClienteDAO {
 			stmt.setLong(2, cliente.getCPF_CNPJCliente());
 			stmt.setLong(3, cliente.getTelefone());
 			stmt.setString(4, cliente.getEmail());
-			stmt.setString(5, cliente.getSenha());
-			stmt.setString(6, cliente.getEndereco());
-			stmt.setLong(7, cliente.getIdEmpresa());
-			stmt.setLong(8, cliente.getIdCliente());
+			stmt.setString(5, cliente.getEndereco());
+			stmt.setLong(6, cliente.getIdEmpresa());
+			stmt.setLong(7, cliente.getIdCliente());
 			stmt.execute();
 			stmt.close();
 			

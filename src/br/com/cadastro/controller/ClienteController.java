@@ -32,7 +32,7 @@ public class ClienteController {
 	
 	@RequestMapping("adicionaCliente")
 	public String adiciona(@Valid Cliente cliente, BindingResult result) throws ClassNotFoundException{
-		if(result.hasFieldErrors("nomeCliente") || result.hasFieldErrors("CPF_CNPJCliente") || result.hasFieldErrors("telefone") || result.hasFieldErrors("email") || result.hasFieldErrors("senha") || result.hasFieldErrors("endereco")|| result.hasFieldErrors("IdEmpresa") ) {
+		if(result.hasFieldErrors("nomeCliente") || result.hasFieldErrors("CPF_CNPJCliente") || result.hasFieldErrors("telefone") || result.hasFieldErrors("email") || result.hasFieldErrors("endereco")|| result.hasFieldErrors("IdEmpresa") ) {
 			return "cliente/insere";
 		}
 		daoCliente.adiciona(cliente);
@@ -47,7 +47,7 @@ public class ClienteController {
 	
 	@RequestMapping("alterarCliente")
 	public String alterar(@Valid Cliente cliente, BindingResult result) throws ClassNotFoundException {
-		if(result.hasFieldErrors("nomeCliente") || result.hasFieldErrors("CPF_CNPJCliente") || result.hasFieldErrors("telefone") || result.hasFieldErrors("email") || result.hasFieldErrors("senha") || result.hasFieldErrors("endereco")|| result.hasFieldErrors("IdEmpresa") ) {
+		if(result.hasFieldErrors("nomeCliente") || result.hasFieldErrors("CPF_CNPJCliente") || result.hasFieldErrors("telefone") || result.hasFieldErrors("email") || result.hasFieldErrors("endereco")|| result.hasFieldErrors("IdEmpresa") ) {
 			return "cliente/edita";
 		}
 		daoCliente.alterar(cliente);

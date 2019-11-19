@@ -46,10 +46,6 @@
 						<input type="text" name="email" value="${cliente.email}" >
 						<form:errors path="cliente.email" cssStyle="color:#B71C1C"/><br />
 						
-						<label for="Senha">Senha</label>  
-						<input type="password" name="senha" value="${cliente.senha}" >
-						<form:errors path="cliente.senha" cssStyle="color:#B71C1C"/><br />
-						
 						<input type="hidden" name="IdEmpresa" value="${empresaLogada.idEmpresa}" >
 						<form:errors path="cliente.IdEmpresa" cssStyle="color:#B71C1C"/><br />
 						
