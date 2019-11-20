@@ -8,8 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import br.com.cadastro.dao.ClienteDAO;
 import br.com.cadastro.dao.ProtocoloDAO;
 import br.com.cadastro.model.Empresa;
 import br.com.cadastro.model.Protocolo;
@@ -19,7 +17,6 @@ public class ProtocoloController {
 
 	@Autowired
 	ProtocoloDAO daoProtocolo;
-	ClienteDAO daoCliente;
 	
 	@RequestMapping("listaProtocolos")
 	public String lista(Model modelProtocolo, HttpSession session) throws ClassNotFoundException{
