@@ -30,9 +30,8 @@
 			
 			<label for="destino">Destino: </label> 
 			<select>
-			<option value="">Selecione um Cliente...</option>					
-				<c:forEach items="${empList}" var="emp">				
-					<option value="${emp}">${emp}</option>			
+				<c:forEach items="${cliente}" var="cliente">								
+					<option value="${protocolo.destino}">${cliente.nomeCliente}</option>			
 				</c:forEach>		
 			</select>
 			<input type="text" name="destino" value="${protocolo.destino}" >
