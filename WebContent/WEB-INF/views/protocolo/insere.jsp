@@ -28,7 +28,13 @@
 			<input type="hidden" name="origem" value="${empresaLogada.idEmpresa}" >
 			<form:errors path="protocolo.origem" cssStyle="color:#B71C1C"/><br />
 			
-			<label for="destino">Destino: </label>  
+			<label for="destino">Destino: </label> 
+			<select>
+			<option value="">Selecione um Cliente...</option>					
+				<c:forEach items="${empList}" var="emp">				
+					<option value="${emp}">${emp}</option>			
+				</c:forEach>		
+			</select>
 			<input type="text" name="destino" value="${protocolo.destino}" >
 			<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
 			
@@ -36,7 +42,7 @@
 			<input type="date" name="dataProtocolo" value="${protocolo.dataProtocolo}">
 			<form:errors path="protocolo.dataProtocolo" cssStyle="color:#B71C1C"/><br />
 			
-			<label for="destino">Item: </label>  
+			<label for="idItem">Item: </label>  
 			<input type="text" name="idItem" value="${protocolo.idItem}" >
 			<form:errors path="protocolo.idItem" cssStyle="color:#B71C1C"/><br />
 			
