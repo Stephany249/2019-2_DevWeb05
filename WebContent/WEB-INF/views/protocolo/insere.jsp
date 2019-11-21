@@ -29,11 +29,6 @@
 			<form:errors path="protocolo.origem" cssStyle="color:#B71C1C"/><br />
 			
 			<label for="destino">Destino: </label> 
-			<select>
-				<c:forEach items="${cliente}" var="cliente">								
-					<option value="${protocolo.destino}">${cliente.nomeCliente}</option>			
-				</c:forEach>		
-			</select>
 			<input type="text" name="destino" value="${protocolo.destino}" >
 			<form:errors path="protocolo.destino" cssStyle="color:#B71C1C"/><br />
 			
